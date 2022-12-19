@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="path/to/nice-select2.css">
+    <title>info</title>
+</head>
+<body>
+    <div class="container">
+           <!-- header content -->
+    <div class="header_content">
+        <h1 class="header_section">Choose multi destination ?</h1>
+        <p class="desc-contant">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut odit
+          nostrum voluptas?
+        </p>
+      </div>
+      <!-- steps -->
+      <div class="stepContainer">
+        <div class="steps">
+          <div class="step active">
+            <span>1</span>
+          </div>
+          <div class="stepLine avtive"></div>
+          <div class="step active">
+            <span>2</span>
+          </div>
+          <div class="stepLine avtive"></div>
+          <div class="step">
+            <span>3</span>
+          </div>
+        </div>
+        <!-- content steps -->
+        <div class="stepsContent">
+          <div class="stepContent">your destination</div>
+          <div class="stepContent">your date</div>
+          <div class="stepContent">information</div>
+        </div>
+      </div>
+        <p class="contentForm" > Tell us about the travelers</p>
+        <div class="fonmContainer">
+           <form class="from">
+              <!-- name -->
+              <div class="inputContainer">
+                <label> name*
+                </label>
+                <input type="text" placeholder="E-Mail">
+              </div>
+              <!-- email -->
+              <div class="inputContainer">
+                <label> email*
+                </label>
+                <input type="text" placeholder="E-Mail">
+              </div>
+              <select id="seachable-select">
+                <option  data-display="Select"> Natioality</option>
+                <option value="1">Some option</option>
+                <option value="2">Another option</option>
+                <option value="3" disabled>A disabled option</option>
+                <option value="4">Potato</option>
+              </select>
+           </form>  
+        </div>
+    </div>
+    <script src="./formInfo.js">
+
+    </script>
+    <script src="path/to/nice-select2.js">
+        var options = {searchable: true};
+    NiceSelect.bind(document.getElementById("seachable-select"), options);
+    </script>
+</body>
+</html>

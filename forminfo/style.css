@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* normliz */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+body {
+  margin: 0;
+}
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+/* header contants */
+.header_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header_section {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 56px;
+  text-align: center;
+  color: #3d3d3d;
+}
+.desc-contant {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  text-align: center;
+  margin: 0 0;
+  color: #3d3d3d;
+}
+/* steps */
+.stepContainer {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.steps {
+  display: flex;
+  gap: 1px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.stepLine {
+  height: 2px;
+  background-color: #777;
+  width: 50px;
+}
+.stepLine.avtive {
+  background-color: #f5a31b;
+}
+.step {
+  width: 11%;
+  border: 1px solid #777;
+  border-radius: 50%;
+  padding: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4px;
+}
+.step.active {
+  background-color: #f5a31b;
+  color: white;
+  border: 0;
+}
+/* step content */
+.stepsContent {
+  display: flex;
+  gap: 16%;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3px;
+}
+.stepContent {
+  color: #777;
+  width: 71px;
+  font-size: 10px;
+  text-align: center;
+}
+
+
+
+/* layout */
+.contentForm{
+    margin: 0;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 37px 0 0 0;
+}
+.fonmContainer{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.from{
+    display: flex;
+    gap: 12px;
+    width: 62%;
+    margin: 0 auto;
+}
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 50%;
+}
+.inputContainer label{
+    font-size: 22px;
+    color: #777;
+}
+.inputContainer input[type="text"] {
+    padding: 12px 8px;
+    border-radius: 8px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+.inputContainer input[type="text"]::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 28px;
+    color: #C0C0C0;
+}
+.inputContainer input[type="text"]:focus {
+  outline: none;
+}
+/* media  responsev*/
+
+@media only screen and (min-width: 768px) {
+    .card {
+      width: 14%;
+    }
+    .cardContent {
+      font-size: 29px;
+    }
+    .stepLine {
+      width: 200px;
+    }
+    .step {
+      width: 3%;
+    }
+    .stepsContent {
+      gap: 22%;
+    }
+  }
