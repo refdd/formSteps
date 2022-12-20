@@ -115,7 +115,7 @@ h1 {
 }
 .from{
     display: flex;
-    gap: 12px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 .inputContainer {
