@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="path/to/nice-select2.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css"
+      rel="stylesheet"
+    />
     <title>info</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-           <!-- header content -->
-    <div class="header_content">
+      <!-- header content -->
+      <div class="header_content">
         <h1 class="header_section">Choose multi destination ?</h1>
         <p class="desc-contant">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut odit
@@ -40,37 +43,142 @@
           <div class="stepContent">information</div>
         </div>
       </div>
-        <p class="contentForm" > Tell us about the travelers</p>
-        <div class="fonmContainer">
-           <form class="from">
-              <!-- name -->
-              <div class="inputContainer">
-                <label> name*
-                </label>
-                <input type="text" placeholder="E-Mail">
+      <!-- layout -->
+     <div class="layoutContainer">
+      <p class="contentForm">Tell us about the travelers</p>
+      <div class="fonmContainer">
+        <form class="from">
+          <!-- name -->
+          <div class="inputContainer">
+            <label> name* </label>
+            <input type="text" placeholder="E-Mail" />
+          </div>
+          <!-- email -->
+          <div class="inputContainer">
+            <label> email* </label>
+            <input type="text" placeholder="E-Mail" />
+          </div>
+          <!-- Natioality -->
+          <div class="inputContainer">
+            <label> Natioality </label>
+            <select
+              id="select-beast"
+              placeholder="Natioality .."
+              autocomplete="off"
+            >
+              <option value="">Select a person...</option>
+              <option value="4">Thomas Edison</option>
+              <option value="1">Nikola</option>
+              <option value="3">Nikola Tesla</option>
+              <option value="5">Arnold Schwarzenegger</option>
+            </select>
+          </div>
+          <!-- number and code -->
+          <div class="condNumberConteiner">
+            <label> Code </label>
+            <div class="inputNumberContainer">
+              <div class="code">
+                <select
+                  id="select-code"
+                  placeholder="code.."
+                  autocomplete="off"
+                >
+                  <option value="">+20</option>
+                  <option value="4">+30</option>
+                  <option value="1">+29</option>
+                  <option value="3">+70</option>
+                  <option value="5">+300</option>
+                </select>
               </div>
-              <!-- email -->
-              <div class="inputContainer">
-                <label> email*
-                </label>
-                <input type="text" placeholder="E-Mail">
+              <div class="number">
+                <input type="number" placeholder="Number" />
               </div>
-              <select id="seachable-select">
-                <option  data-display="Select"> Natioality</option>
-                <option value="1">Some option</option>
-                <option value="2">Another option</option>
-                <option value="3" disabled>A disabled option</option>
-                <option value="4">Potato</option>
-              </select>
-           </form>  
-        </div>
-    </div>
-    <script src="./formInfo.js">
+            </div>
+          </div>
+          <!-- counter  -->
+          <div class="inputCounterContainer">
+            <div class="counterContainer">
+              <p>aduilt (+12)</p>
+              <div class="counter">
+                <div class="add">+</div>
+                <div class="C_counter">aduilt</div>
+                <div class="remove">-</div>
+              </div>
+            </div>
+            <div class="counterContainer">
+              <p>Children(-12)</p>
+              <div class="counter">
+                <div class="add">+</div>
+                <div class="C_counter">Children</div>
+                <div class="remove">-</div>
+              </div>
+            </div>
+            <div class="counterContainer">
+              <p>infants(0 to 2)</p>
+              <div class="counter">
+                <div class="add">+</div>
+                <div class="C_counter">Infants</div>
+                <div class="remove">-</div>
+              </div>
+            </div>
+          </div>
+          <!-- content -->
+          <div class="averageContent">
+            <p class="averageContent">Your average budget per person*</p>
+            <p class="flightsContent">(international flights NOT included)</p>
+          </div>
+          <!-- budget -->
+          <div class="budgetContainer">
+            <select
+              id="select-budget"
+              placeholder="budget.."
+              autocomplete="off"
+            >
+              <option value="">Select a person...</option>
+              <option value="4">Thomas Edison</option>
+              <option value="1">Nikola</option>
+              <option value="3">Nikola Tesla</option>
+              <option value="5">Arnold Schwarzenegger</option>
+            </select>
+          </div>
 
-    </script>
-    <script src="path/to/nice-select2.js">
-        var options = {searchable: true};
-    NiceSelect.bind(document.getElementById("seachable-select"), options);
-    </script>
-</body>
+          <p class="flightContent">
+            Add flight offer to your vacation package (Optional)
+          </p>
+          <!-- flight -->
+          <div class="budgetContainer">
+            <input type="text" placeholder="Depture Airport" />
+          </div>
+          <p class="flightContent">Tell us about your trip*</p>
+          <!-- text massage -->
+          <div class="textArea">
+            <textarea
+              placeholder="Additional information might help us create a better package that meets your needs *"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="button_container">
+        <button class="next_button Back">
+          <a style="text-decoration: none; color: #000" href="../index.html">
+            Back</a
+          >
+        </button>
+        <button class="next_button">
+          <a
+            style="text-decoration: none; color: #000"
+            href="../forminfo//fonmIfon.html"
+            >Next</a
+          >
+        </button>
+      </div>
+     </div>
+     
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/js/tom-select.complete.min.js"></script>
+
+    <script src="./formInfo.js"></script>
+  </body>
 </html>
