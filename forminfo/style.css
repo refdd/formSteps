@@ -135,6 +135,7 @@ h1 {
     color: #777;
     text-transform: capitalize;
 }
+
 .inputContainer input[type="text"] {
     padding: 14px 8px;
     border-radius: 8px;
@@ -160,6 +161,9 @@ h1 {
 }
 .inputNumberContainer{
   display: flex;
+}
+.number {
+  flex: 1;
 }
 .number input[type="number"] {
   padding: 14px 8px;
@@ -268,7 +272,11 @@ color: #747474;
   gap: 6px;
   width: 70%;
 }
-
+.dudgetTextConstiner {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
 .natioaltyImag {
     position: absolute;
     top: 36px;
