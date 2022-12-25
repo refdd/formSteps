@@ -64,7 +64,7 @@ h1 {
   flex-wrap: nowrap;
 }
 .stepLine {
-  height: 2px;
+  height:1.5px;
   background-color: #777;
   width: 50px;
 }
@@ -72,7 +72,8 @@ h1 {
   background-color: #f5a31b;
 }
 .step {
-  width: 11%;
+  height: 30px;
+  width: 30px;
   border: 1px solid #777;
   border-radius: 50%;
   padding: 9px;
@@ -99,6 +100,8 @@ h1 {
   width: 71px;
   font-size: 10px;
   text-align: center;
+  text-transform: capitalize;
+
 }
 /* layout */
 .contentForm{
@@ -115,10 +118,11 @@ h1 {
 }
 .from{
     display: flex;
-    gap: 20px;
+    gap: 12px;
     flex-wrap: wrap;
 }
 .inputContainer {
+  position: relative;
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -127,8 +131,9 @@ h1 {
 .inputContainer label,
 .condNumberConteiner label
 {
-    font-size: 22px;
+    font-size: 16px;
     color: #777;
+    text-transform: capitalize;
 }
 .inputContainer input[type="text"] {
     padding: 14px 8px;
@@ -140,7 +145,7 @@ h1 {
 .inputContainer input[type="text"]::placeholder {
     font-style: normal;
     font-weight: 400;
-    font-size: 19px;
+    font-size: 14px;
     line-height: 28px;
     color: #C0C0C0;
 }
@@ -162,10 +167,11 @@ h1 {
   background: #FFFFFF;
   border: 1px solid #C4C4C4;
   border-radius: 0 10px 10px 0;
-  width: 205px;
+  width: 91%;
 }
 .code{
-  width: 55px;
+  width: 80px;
+  position: relative;
 }
 .code .ts-wrapper.single .ts-control, .ts-wrapper.single .ts-control input{
   padding: 13px;
@@ -187,9 +193,9 @@ h1 {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 23px;
-
+text-transform: capitalize;
   color: #747474;
 }
 .counter{
@@ -206,7 +212,7 @@ h1 {
   font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
+font-size: 14px;
 line-height: 28px;
 
 color: #C0C0C0;
@@ -214,7 +220,6 @@ color: #C0C0C0;
 .add{
   width: 28px;
   height: 21px;
-  background: #3D3D3D;
   text-align: center;
   color: #fff;
   cursor: pointer;
@@ -224,7 +229,6 @@ color: #C0C0C0;
 .remove{
   width: 28px;
   height: 21px;
-  background: #3D3D3D;
   text-align: center;
   color: #fff;
   cursor: pointer;
@@ -244,7 +248,7 @@ color: #C0C0C0;
  font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
+font-size: 18px;
 line-height: 23px;
 color: #747474;
 }
@@ -253,25 +257,72 @@ color: #747474;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 21px;
   color: #878585;
 }
 .budgetContainer{
   display: flex;
+  position: relative;
   flex-direction: column;
   gap: 6px;
   width: 70%;
 }
+
+.natioaltyImag {
+    position: absolute;
+    top: 36px;
+    right: 11px;
+    width: 23px;
+    height: 6px;
+    z-index: 7;
+}
+.codeImag{
+  position: absolute;
+  top: 12px;
+  right: 6px;
+  width: 23px;
+  height: 6px;
+  z-index: 7;
+}
+.codeImag img {
+  width: 100%;
+  height: auto;
+}
+.natioaltyImag img
+{
+width: 100%;
+height: auto;
+}
+.budgetImag  {
+      position: absolute;
+    top: 9px;
+    right: 17px;
+    width: 23px;
+    height: 6px;
+    z-index: 7;
+}
+.budgetImag img
+{
+width: 100%;
+height: auto;
+}
 input#select-budget-ts-control::placeholder{
-  font-size: 15px !important;
+  font-size: 14px !important;
+  color: #C0C0C0 !important;
+
+}
+#select-beast-ts-control::placeholder{
+  font-size: 14px !important;
+  color: #C0C0C0 !important;
+
 }
 .flightContent{
 margin: 0;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
+font-size: 14px;
 line-height: 23px;
 color: #747474;
 }
@@ -285,7 +336,7 @@ color: #747474;
 .budgetContainer input[type="text"]::placeholder {
   font-style: normal;
   font-weight: 400;
-  font-size: 19px;
+  font-size: 16px;
   line-height: 28px;
   color: #C0C0C0;
 }
@@ -351,6 +402,9 @@ outline: none;
   padding: 13px;
   border-radius: 10px;
 }
+#select-code-ts-control::placeholder{
+  font-size: 14px !important;
+}
 @media only screen and (min-width: 768px) {
     .card {
       width: 14%;
@@ -362,10 +416,12 @@ outline: none;
       width: 200px;
     }
     .step {
-      width: 3%;
+      width: 30px;
+      height: 30px;
+      font-weight: bold;
     }
     .stepsContent {
-      gap: 22%;
+      gap: 24%;
     }
   }
   /* media  responsev*/
@@ -376,7 +432,7 @@ outline: none;
     font-size: 22px;
 }
 .layoutContainer {
-  width: 94%;
+  width: 86%;
 }
 .fonmContainer {
   width: 95%;
@@ -384,14 +440,17 @@ outline: none;
 .inputContainer {
   width: 100%;
 }
+.number {
+  flex: 1;
+}
 .number input[type="number"] {
-  width: 257px;
+  width:93%;
 }
 .inputCounterContainer {
   flex-direction: column;
 }
 .counterContainer {
-  width: 80%;
+  width: 53%;
 }
 .averageContent {
   font-size: 17px;
@@ -487,4 +546,13 @@ outline: none;
   .containerLayout {
     margin-bottom: 87px;
   }
+  .desc-contant {
+    margin: 0 21px;
+}
+.condNumberConteiner{
+  width: 100%;
+}
+.number {
+  flex: 1;
+}
 }

@@ -32,7 +32,7 @@
             <span>2</span>
           </div>
           <div class="stepLine avtive"></div>
-          <div class="step">
+          <div class="step active">
             <span>3</span>
           </div>
         </div>
@@ -72,6 +72,9 @@
               <option value="3">Nikola Tesla</option>
               <option value="5">Arnold Schwarzenegger</option>
             </select>
+            <div class="natioaltyImag">
+              <img src="../image/Chevron.png" alt="">
+             </div>
           </div>
           <!-- number and code -->
           <div class="condNumberConteiner">
@@ -80,7 +83,7 @@
               <div class="code">
                 <select
                   id="select-code"
-                  placeholder="code.."
+                  placeholder="Code"
                   autocomplete="off"
                 >
                   <option value="">+20</option>
@@ -89,6 +92,9 @@
                   <option value="3">+70</option>
                   <option value="5">+300</option>
                 </select>
+                <div class="codeImag">
+                  <img src="../image/Chevron.png" alt="">
+                 </div>
               </div>
               <div class="number">
                 <input type="number" placeholder="Number" />
@@ -100,25 +106,37 @@
             <div class="counterContainer">
               <p>aduilt (+12)</p>
               <div class="counter">
-                <div class="add">+</div>
-                <div class="C_counter">aduilt</div>
-                <div class="remove">-</div>
+                <div onclick="addCounter('aduilt')" class="add">
+                  <img src="../image/Plus.png" alt="">
+                </div>
+                <div id="aduilt" class="C_counter"></div>
+                <div  onclick="removeCounter('aduilt')"  class="remove">
+                  <img src="../image/Minus.png" alt="">
+                </div>
               </div>
             </div>
             <div class="counterContainer">
               <p>Children(-12)</p>
               <div class="counter">
-                <div class="add">+</div>
-                <div class="C_counter">Children</div>
-                <div class="remove">-</div>
+                <div onclick="addCounter('Children')" class="add">
+                  <img src="../image/Plus.png" alt="">
+                </div>
+                <div id="Children" class="C_counter"></div>
+                <div onclick="removeCounter('Children')"  class="remove">
+                  <img src="../image/Minus.png" alt="">
+                </div>
               </div>
             </div>
             <div class="counterContainer">
               <p>infants(0 to 2)</p>
               <div class="counter">
-                <div class="add">+</div>
-                <div class="C_counter">Infants</div>
-                <div class="remove">-</div>
+                <div onclick="addCounter('infants')" class="add">
+                  <img src="../image/Plus.png" alt="">
+                </div>
+                <div id="Infants"  class="C_counter"></div>
+                <div onclick="removeCounter('infants')" class="remove">
+                  <img src="../image/Minus.png" alt="">
+                </div>
               </div>
             </div>
           </div>
@@ -140,6 +158,9 @@
               <option value="3">Nikola Tesla</option>
               <option value="5">Arnold Schwarzenegger</option>
             </select>
+               <div class="budgetImag">
+                <img src="../image/Chevron.png" alt="">
+               </div>
           </div>
 
           <p class="flightContent">
@@ -162,13 +183,13 @@
       </div>
       <div class="button_container">
         <button class="next_button Back">
-          <a style="text-decoration: none; color: #000" href="../calendar/calendar.html">
+          <a style="text-decoration: none; color: #3D3D3D" href="../calendar/calendar.html">
             Back</a
           >
         </button>
         <button class="next_button">
           <a
-            style="text-decoration: none; color: #000"
+            style="text-decoration: none;  color:#FFFFFF ;   "
             href="../thankYou/index.html"
             >Next</a
           >

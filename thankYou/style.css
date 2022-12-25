@@ -64,7 +64,7 @@ h1 {
   flex-wrap: nowrap;
 }
 .stepLine {
-  height: 2px;
+  height:1.5px;
   background-color: #777;
   width: 50px;
 }
@@ -72,7 +72,8 @@ h1 {
   background-color: #f5a31b;
 }
 .step {
-  width: 11%;
+  width: 30px;
+  height: 30px;
   border: 1px solid #777;
   border-radius: 50%;
   padding: 9px;
@@ -99,6 +100,8 @@ h1 {
   width: 71px;
   font-size: 10px;
   text-align: center;
+  text-transform: capitalize;
+
 }
 /* layout thank you  */
 .container {
@@ -145,10 +148,12 @@ h1 {
     width: 200px;
   }
   .step {
-    width: 3%;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
   }
   .stepsContent {
-    gap: 22%;
+    gap: 24%;
   }
 }
 /* media  responsev*/

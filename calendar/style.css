@@ -57,7 +57,7 @@ h1 {
   flex-wrap: nowrap;
 }
 .stepLine {
-  height: 2px;
+  height:1.5px;
   background-color: #777;
   width: 50px;
 }
@@ -65,7 +65,8 @@ h1 {
   background-color: #f5a31b;
 }
 .step {
-  width: 11%;
+  height: 30px;
+  width: 30px;
   border: 1px solid #777;
   border-radius: 50%;
   padding: 9px;
@@ -92,69 +93,79 @@ h1 {
   width: 71px;
   font-size: 10px;
   text-align: center;
+  text-transform: capitalize;
+
 }
 /* tabs clender */
 .tabsCalender {
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   padding-top: 15px;
 }
 .ExactDate {
-  padding: 5px 14px 5px 14px;
-  background: #ebebeb;
-  box-shadow: inset 0px 4px 30px rgba(255, 255, 255, 0.25),
-    inset 0px 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px 0px 0px 10px;
-  color: white;
-  cursor: pointer;
-  font-size: 24px;
+    background: #ebebeb;
+    box-shadow: inset 0px 4px 30px rgb(255 255 255 / 25%), inset 0px 4px 10px rgb(0 0 0 / 10%);
+    border-radius: 10px 0px 0px 10px;
+    color: #3D3D3D;
+    cursor: pointer;
+    font-size: 24px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .ExactDate.active {
   box-shadow: 5px 4px 30px rgb(0 0 0 / 25%);
   background: #0a2b4b;
+  color: #FFFFFF;
 }
 .Approximate {
   background: #ebebeb;
   box-shadow: inset 0px 4px 30px rgba(255, 255, 255, 0.25),
     inset 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 0 10px 10px 0;
-  color: white;
-  padding: 5px 14px 5px 14px;
+  color: #3D3D3D;
   cursor: pointer;
   font-size: 24px;
 }
 .Approximate.active {
   box-shadow: 5px 4px 30px rgb(0 0 0 / 25%);
   background: #0a2b4b;
+  color: #FFFFFF;
+
 }
 /* header calender */
 .headerCalendar {
   margin: 0;
   text-align: center;
   font-size: 26px;
-  font-weight: 600;
-  padding: 19px 0 0 0;
+  font-weight: 400;
+  padding: 19px 0;
+  color: #3d3d3d;
+text-transform: capitalize;
 }
 /* calender */
 .cover{
   background: #FFFFFF;
   box-shadow: 0px 4px 10px rgb(0 0 0 / 10%);
   border-radius: 20px;
-  width:  79%;
+  width:  73%;
   margin: 0 auto;
-  padding: 44px 0 26px 0;
+  padding: 26px 0;
 }
 .selectType{
 margin: 0;
 text-align: center;
 font-size: 24px;
-color: #3b3a3a;
-font-weight: 700;
+color: #3d3d3d;
+font-weight: 400;
 padding: 21px 0 0 0;
 }
-
+.vanilla-calendar{
+  border-radius: 15px !important;
+}
 /* Exact Date */
 .containnerDate {
   gap: 12px;
@@ -162,6 +173,7 @@ padding: 21px 0 0 0;
   width: 70%;
   margin: 0 auto;
   display: none;
+  transition: 0.3s;
 }
 .containnerDate.open{
  display: flex;
@@ -178,10 +190,11 @@ padding: 21px 0 0 0;
 }
 /* approximate  */
 .approximteCantainer{
-  width: 74%;
+  width: 65%;
   margin: 0 auto;
   display: none;
   flex-direction: column;
+  transition: 0.3s;
 }
 .approximteCantainer.open{
   display: flex;
@@ -189,14 +202,17 @@ padding: 21px 0 0 0;
 .approximteCantainer p{
   margin: 0;
   font-size: 25px;
-  padding: 24px 0 10px 0;
+  padding: 10px 0 10px 5px;
   color: #777;
-  font-weight: 600;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 
 .monthContainer{
   border: 1px solid #777;
   border-radius: 15px;
+  width: 95%;
+  margin: 0 auto;
 }
 .months{
   list-style: none;
@@ -223,22 +239,22 @@ padding: 21px 0 0 0;
 .approxmite{
   list-style: none;
   display: flex;
-  gap: 37px;
+  gap:13px;
   flex-wrap: wrap;
   align-items: center;
+  padding-left:0 ;
 }
 .singleApprox{
   font-size: 22px;
   font-weight: bold;
   color: white;
-  background: #777;
+  background: #9C9C9C;
   border-radius: 10px;
-  padding: 7px 10px 7px 10px;
+  padding: 7px 17px ;
   cursor: pointer;
 }
 .singleApprox.active{
   background: #f5a31b;
-
 }
 /* button next */
 .button_container {
@@ -288,26 +304,43 @@ padding: 21px 0 0 0;
     width: 200px;
   }
   .step {
-    width: 3%;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
   }
   .stepsContent {
-    gap: 22%;
+    gap: 24%;
   }
 }
 /* media  responsev*/
 @media only screen and (max-width: 768px) {
   /* taps respon */
   .tabsCalender {
-    flex-direction: column;
-    gap: 10px;
+    width: 81%;;
+}
+.stepContainer {
+  padding-top: 0px;
 }
 .ExactDate , .Approximate {
- border-radius: 10px;
+  width: 153px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+color: #3d3d3d;
 }
   /* layout responsev */
   .containnerDate {
     flex-direction: column;
     align-items: center;
+    gap: 0;
   }
   .approximteCantainer {
     width: 95%;
@@ -315,8 +348,14 @@ padding: 21px 0 0 0;
     display: none;
     flex-direction: column;
 }
+.approxCaontainer{
+width: 95%;
+margin: 0 auto;
+}
 .approxmite {
   gap: 20px;
+  padding-left: 0;
+  justify-content: space-between;
 }
 .singleApprox {
   font-size: 17px;
@@ -324,6 +363,8 @@ padding: 21px 0 0 0;
 }
 .months {
   gap: 18px;
+  padding-left: 0;
+  justify-content: center;
 }
 .singilMonth {
   width: 83px;
@@ -331,6 +372,9 @@ padding: 21px 0 0 0;
   /* button respons */
   .button_container {
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #FFFFFF;
   }
   .next_button {
     width: 41%;
@@ -410,4 +454,19 @@ padding: 21px 0 0 0;
   .containerLayout {
     margin-bottom: 87px;
   }
+  .cover {
+  
+    width: 94%;
+    padding: 25px 0 26px 0;
+    margin-bottom: 46%;
+}
+.header_date {
+  text-align: left;
+}
+.selectType {
+  font-size: 21px;
+}
+.desc-contant {
+  margin: 0 23px;
+}
 }
