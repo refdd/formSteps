@@ -6,16 +6,14 @@ const approximteSection = document.querySelector(".approximteCantainer");
 const mouth = document.querySelectorAll(".singilMonth")
 const approximte = document.querySelectorAll(".singleApprox")
 const selectType = document.querySelector(".selectType")
-console.log('====================================');
-console.log(approximte);
-console.log('====================================');
+
 // calendar data
 
 document.addEventListener("DOMContentLoaded", () => {
   const calendar = new VanillaCalendar("#return", {
     actions: {
       clickDay(event, dates) {
-        console.log(dates);
+        console.log( " start date  " +  dates);
       },
     },
   });
@@ -25,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const calendar = new VanillaCalendar("#departure", {
     actions: {
       clickDay(event, dates) {
-        console.log(dates);
+        console.log( " end  date  " +  dates);
       },
     },
   });
